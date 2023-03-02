@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg,
+            rgba(26, 238, 208, 1) 26%,
+            rgba(232, 255, 0, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.container {
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: steelblue;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+}
+
+.new-input {
+    width: 100%;
+    /* width: -webkit-fill-available; */
+    background: #f2f2f2;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+}
+
+li:nth-child(odd) {
+    background-color: white;
+}
+
+li:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.crossed {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.d-none {
+    display: none;
+}
+
+li,
+.header {
+    user-select: none;
+}
