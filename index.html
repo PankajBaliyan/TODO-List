@@ -5,18 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     <title>ToDo List</title>
 </head>
 
 <body>
+    <div>
+        <h1>My To-Do List</h1>
+        <div class="top-buttons">
+            <button type="button" id="save-button">Save List</button>
+            <button type="button" id="retrieve-button">Retrieve Last</button>
+            <button type="button" id="clear-button">Clear List</button>
+        </div>
+    </div>
+
+    <div class="input-container">
+        <input type="text" placeholder="Enter task" name="input" id="input" class="new-input" autofocus>
+        <button type="button" class="submitBtn">Add Task</button>
+    </div>
 
     <div class="container">
-        <div class="header">
-            <div>TODO - LIST</div>
-            <div class="submitBtn">+</div>
-        </div>
-        <input type="text" name="input" id="input" placeholder="Add new todo" class="new-input">
         <ul id="ul">
         </ul>
     </div>
