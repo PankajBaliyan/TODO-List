@@ -24,6 +24,19 @@
         margin-left: 0px;
         margin-right: 0px;
     }
+
+    .git-down {
+        width: 100%;
+        top: 5px;
+        left: 5px;
+    }
+
+    .git-down a {
+        display: inline-block;
+        border-radius: 5px;
+        padding-top: 5px;
+        background: white;
+    }
 }
 
 /* TABLET DEVICES  */
@@ -33,6 +46,22 @@
 @media (max-width:600px) {
     .input-container {
         width: 90%;
+    }
+}
+
+@media (min-width:481px) {
+    .git-down {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        top: auto;
+    }
+
+    .git-down a {
+        display: inline-block;
+        border-radius: 5px;
+        padding-top: 5px;
+        background: white;
     }
 }
 
@@ -51,5 +80,18 @@
         flex-direction: column;
         align-items: center;
         width: 568px;
+    }
+}
+
+@media (min-width:1200px) {
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 568px;
+    }
+
+    .container {
+        width: 800px;
     }
 }
