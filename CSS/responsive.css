@@ -1,0 +1,55 @@
+/* MOBILE DEVICES  */
+@media (min-width:320px) and (max-width:480px) {
+    .top-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-buttons button {
+        margin-bottom: 5px;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    #input {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+/* TABLET DEVICES  */
+/* LAPTOP DEVICES  */
+/* DESKTOP DEVICES  */
+/* TV/EXTRA LARGE DEVICES  */
+@media (max-width:600px) {
+    .input-container {
+        width: 90%;
+    }
+}
+
+@media (min-width:481px) and (max-width:1200px) {
+    #input {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .container {
+        width: 60%;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 568px;
+    }
+}
